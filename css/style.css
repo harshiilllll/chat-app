@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container::-webkit-scrollbar{
+    width: .3rem;
+}
+.container::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: #ddd;
+    border-radius: 50px;
+    background-clip: padding-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(0, 24, 37) 0%, rgb(0, 125, 181) 98.91%);
+    color: white;
+}
+
+nav{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 2vh 0;
+    padding-top: 2vh;
+}
+
+.container{
+    /* border: 2px solid white; */
+    padding: 0vh 5vw;
+    margin: 2vh 0 0 0;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.msg {
+    background-color: #eee;
+    padding: 2vh;
+    margin: 1vh 0;
+    color: #222;
+    max-width: 70vw;
+    border: 1px solid #111;
+}
+
+.msg.left{
+    float: left;
+    clear: both;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.msg.right{
+    float: right;
+    clear: both;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 5vh 0;
+}
+
+#send-container{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#send-container input{
+    width: 80vw;
+    height: 7vh;
+    padding: 0 1rem;
+    background-color: #ddd;
+    border: 1px solid #555;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+#send-container .btn{
+    width: 18vw;
+    height: 7vh;
+    background-color: #ddd;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
